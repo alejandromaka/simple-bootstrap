@@ -1,0 +1,23 @@
+{
+  "author": "alejandro makarem",
+  "name": "simple-bootstrap",
+  "description": "runs webpack dev server",
+  "scripts": {
+    "start": "webpack-dev-server --inline --config ./webpack.config.js --content-base public/ \"$@\""
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
