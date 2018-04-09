@@ -1,0 +1,13 @@
+[ignore]
+.*/node_modules/eslint-plugin-jsx-a11y/.*
+
+[include]
+src/**/*.js
+
+[libs]
+
+[lints]
+
+[options]
+module.file_ext=.scss
+module.name_mapper.extension='scss' -> 'empty/object'
