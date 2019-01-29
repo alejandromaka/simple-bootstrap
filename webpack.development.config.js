@@ -1,6 +1,4 @@
 const path = require('path');
-const FlowBabelWebpackPlugin = require('flow-babel-webpack-plugin');
-
 const publicPath = '/scripts/';
 
 module.exports = {
@@ -17,7 +15,10 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+          options: {
+            presets: ["@babel/preset-flow", "@babel/react"]
+          }
         }
       },
       {
@@ -46,8 +47,5 @@ module.exports = {
     stats: {
       colors: true
     }
-  },
-  plugins: [
-    new FlowBabelWebpackPlugin()
-  ]
+  }
 };

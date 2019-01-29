@@ -1,9 +1,0 @@
-{
-  "plugins": [
-    "transform-flow-comments"
-  ],
-  "presets": [
-    "env",
-    "react"
-  ]
-}
